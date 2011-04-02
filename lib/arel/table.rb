@@ -96,8 +96,8 @@ primary_key (#{caller.first}) is deprecated and will be removed in ARel 3.0.0
       from(self).skip amount
     end
 
-    def having expr
-      from(self).having expr
+    def having *expr
+      from(self).having *expr
     end
 
     def columns
